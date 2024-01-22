@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml
+	xmlns="http://earth.google.com/kml/2.0">
+	<Document>
+		<Style id="z1">
+			<IconStyle>
+				<Icon>
+					<href>
+					https://maps.google.com/mapfiles/kml/paddle/pink-blank.png
+					</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="z2">
+			<IconStyle>
+				<Icon>
+					<href>
+					https://maps.google.com/mapfiles/kml/paddle/blu-blank.png
+					</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="z3">
+			<IconStyle>
+				<Icon>
+					<href>
+					https://maps.google.com/mapfiles/kml/paddle/grn-blank.png
+					</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Style id="z4">
+			<IconStyle>
+				<Icon>
+					<href>
+					https://maps.google.com/mapfiles/kml/paddle/orange-blank.png
+					</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		<Folder>
+			<name>Libraries</name>
+			<styleUrl>#z1</styleUrl>
+			<Placemark>
+				<styleUrl>#z1</styleUrl>
+				<name>Leavey</name>
+				<Point>
+					<coordinates>-118.2829617,34.0217565</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z1</styleUrl>
+				<name>SEL</name>
+				<Point>
+					<coordinates>-118.2888411,34.0196256</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z1</styleUrl>
+				<name>Doheny</name>
+				<Point>
+					<coordinates>-118.2841768,34.0203371</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>restaurants</name>
+			<styleUrl>#z2</styleUrl>
+			<Placemark>
+				<styleUrl>#z2</styleUrl>
+				<name>Cafe Annenberg</name>
+				<Point>
+					<coordinates>-118.2872641,34.0207431</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z2</styleUrl>
+				<name>Tutor hall cafe</name>
+				<Point>
+					<coordinates>-118.2899143,34.0200275</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z2</styleUrl>
+				<name>Rock and Reilly</name>
+				<Point>
+					<coordinates>-118.2841415,34.0242538</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<styleUrl>#z3</styleUrl>
+			<name>Fountains</name>
+			<Placemark>
+				<styleUrl>#z3</styleUrl>
+				<name>Fountain 1</name>
+				<Point>
+					<coordinates>-118.2861019,34.0204255</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z3</styleUrl>
+				<name>Fountain 2</name>
+				<Point>
+					<coordinates>-118.2909055,34.0190061</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z3</styleUrl>
+				<name>Fountain 3</name>
+				<Point>
+					<coordinates>-118.2853235,34.025183</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<styleUrl>#z4</styleUrl>
+			<name>Dept buildings</name>
+			<Placemark>
+				<styleUrl>#z4</styleUrl>
+				<name>Annenberg</name>
+				<Point>
+					<coordinates>-118.2864837,34.0221893</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z4</styleUrl>
+				<name>Cinematic arts</name>
+				<Point>
+					<coordinates>-118.2860399,34.0229895</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<styleUrl>#z4</styleUrl>
+				<name>Dramatic arts</name>
+				<Point>
+					<coordinates>-118.2872756,34.0247834</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Placemark>
+			<name>Home</name>
+			<Point>
+				<coordinates>-118.2799864,34.0280492</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>ConvexHull</name>
+			<Style>
+				<LineStyle>
+					<color>7f0000ff</color>
+				</LineStyle>
+				<PolyStyle>
+					<color>ff0000cc</color>
+				</PolyStyle>
+			</Style>
+			<Polygon>
+				<outerBoundaryIs>
+					<LinearRing>
+					<coordinates>
+						-118.2909055,34.0190061
+						-118.2872756,34.0247834
+						-118.2799864,34.0280492
+						-118.2829617,34.0217565
+						-118.2841768,34.0203371
+						-118.2909055,34.0190061
+					</coordinates>
+					</LinearRing>
+				</outerBoundaryIs>
+			</Polygon>
+		</Placemark>
+		<Placemark>
+			<name>Neighbour1</name>
+			<description>Rock and Reilly</description>
+			<Style>
+				<LineStyle>
+					<color>ffff0000</color>
+					<width>4</width>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>-118.2799864,34.0280492 -118.2841415,34.0242538</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Neighbour2</name>
+			<description>Fountain 3</description>
+			<Style>
+				<LineStyle>
+					<color>ffff0000</color>
+					<width>4</width>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>-118.2799864,34.0280492 -118.2853235,34.025183</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Neighbour3</name>
+			<description>Leavey</description>
+			<Style>
+				<LineStyle>
+					<color>ffff0000</color>
+					<width>4</width>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>-118.2799864,34.0280492 -118.2829617,34.0217565</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>Neighbour4</name>
+			<description>Cinematic arts</description>
+			<Style>
+				<LineStyle>
+					<color>ffff0000</color>
+					<width>4</width>
+				</LineStyle>
+			</Style>
+			<LineString>
+				<coordinates>-118.2799864,34.0280492 -118.2860399,34.0229895</coordinates>
+			</LineString>
+		</Placemark>
+	</Document>
+</kml>
+<!-- 
+POLYGON((-118.2909055 34.0190061,-118.2872756 34.0247834,-118.2799864 34.0280492,-118.2829617 34.0217565,-118.2841768 34.0203371,-118.2909055 34.0190061)) -->
+<!-- "Rock and Reilly"	"POINT(-118.2841415 34.0242538)"	0.005627603146105454
+"Fountain 3"	"POINT(-118.2853235 34.025183)"	0.0060580309383542605
+"Leavey"	"POINT(-118.2829617 34.0217565)"	0.006960638144593167
+"Cinematic arts"	"POINT(-118.2860399 34.0229895)"	0.00788957706978361 -->

@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+<title>OL</title>
+<script src="https://openlayers.org/api/OpenLayers.js">
+</script>
+<style>
+#map {
+    width: 90vw;
+    height: 90vh;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+<script>
+let d = [{"name": "Leavey", "lat": 34.0217565, "long":-118.2829617},
+{"name": "SEL", "lat": 34.0196256, "long":-118.2888411},
+{"name": "Doheny", "lat": 34.0203371, "long":-118.2841768},
+{"name": "Cafe Annenberg", "lat": 34.0207431, "long":-118.2872641},
+{"name": "Tutor hall cafe", "lat": 34.2899143, "long":-118.0200275},
+{"name": "Rock and Reilly", "lat": 34.0242538, "long":-118.2841415},
+{"name": "Fountain 1", "lat": 34.0204255, "long":-118.2861019},
+{"name": "Fountain 2", "lat": 34.0190061, "long":-118.2909055},
+{"name": "Fountain 3", "lat": 34.025183, "long":-118.2853235},
+{"name": "Annenberg", "lat": 34.0221893, "long":-118.2864837},
+{"name": "Cinematic arts", "lat": 34.0229895, "long":-118.2860399},
+{"name": "Dramatic arts", "lat": 34.0247834, "long":-118.2872756},
+{"name": "Home", "lat": 34.0280492, "long":-118.2799864}]
+
+localStorage.setItem("locations",JSON.stringify(d));
+
+var locations = JSON.parse(localStorage.getItem("locations"));
+console.log(locations); 
+
+function initMap() {
+        map = new OpenLayers.Map('map');
+        basemap = new OpenLayers.Layer.OSM("Simple OSM Map");
+        map.addLayer(basemap);
+        markers = new OpenLayers.Layer.Markers("Markers");
+        map.addLayer(markers);
+}
+
+function addMarker(latitude, longitude) {
+        var lonLat = new OpenLayers.LonLat(longitude, latitude)
+            .transform(
+                new OpenLayers.Projection("EPSG:4326"), 
+                map.getProjectionObject() 
+        );
+        var point = new OpenLayers.Marker(lonLat);
+        markers.addMarker(point);
+        map.setCenter(lonLat, 14); 
+}
+
+
+initMap();
+
+for(var el in locations) { 
+  addMarker(locations[el]['lat'], locations[el]['long']);
+}
+</script>
+</body>
+</html>
